@@ -32,6 +32,11 @@ a:hover { color: #b4e0fb; }
 
 .main {
 	margin: 0;
+	padding: 0;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	background-image: url("./assets/covers/wunder.png");
 	background-repeat: no-repeat;
@@ -41,7 +46,7 @@ a:hover { color: #b4e0fb; }
 }
 
 .wrap {
-	display:  flex;
+	display: flex;
 	flex-direction: column;
 	gap: 5px;
 }
