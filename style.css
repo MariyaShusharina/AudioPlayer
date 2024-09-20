@@ -18,6 +18,21 @@ body {
 	background-color: #000000;
 }
 
+body::before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	background-image: url("./assets/covers/wunder.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	filter: blur(5px);
+	z-index: -1;
+}
+
 p, a {
 	font-family: century gothic;
 	color: #FFFFFF;
@@ -37,12 +52,6 @@ a:hover { color: #b4e0fb; }
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-	background-image: url("./assets/covers/wunder.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	filter: blur(5px);
 }
 
 .wrap {
