@@ -38,17 +38,28 @@ function playMusic() {
 	if (!isPlay) {
 		audio.play();
 		isPlay = true;
-		playBtn.classList.remove('pause');
+		playBtn.classList.add('pause');
 	} else {
 		audio.pause();
 		isPlay = false;
-		playBtn.classList.add('pause');
+		playBtn.classList.remove('pause');
 	}
 }
 
 function nextSong {
-	document.body.style.backgroundImg = "url('./assets/covers/cover_2.png')";
+	document.querySelector("body::before").style.backgroundImage = "url('./assets/covers/cover_2.png')";
 	document.querySelector("cover").src = "./assets/covers/cover_2.png";
+
+	if (!isPlay) {
+		//replace with next audio
+		audio.play();
+		isPlay = true;
+		playBtn.classList.add('pause');
+	} else {
+		audio.pause();
+		//replace with next audio
+		audio.play();
+	}
 }
 
 function prevSong {}
