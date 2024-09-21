@@ -53,7 +53,7 @@ function playMusic() {
 
 function nextSong() {
 
-	if (numSong < playlist.length - 1) { numSong = numSong + 1;
+	if (numSong < (playlist.length - 1)) { numSong = numSong + 1;
 	} else { numSong = 0; }
 
 	document.querySelector("body::before").style.backgroundImage = "url('" + covers[numSong] + "')";
