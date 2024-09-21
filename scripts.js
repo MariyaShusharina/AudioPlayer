@@ -1,5 +1,5 @@
 
-const audio = document.querySelector("audio");
+let audio = document.querySelector("audio");
 const playBtn = document.querySelector("play-btn");
 
 const nextBtn = document.querySelector("next");
@@ -97,7 +97,7 @@ function prevSong() {
 }
 
 
-playBtn.addEventListener('click', playMusic);
+playBtn.addEventListener("click", playMusic);
 
-nextBtn.addEventListener('click', nextSong);
-prevBtn.addEventListener('click', prevSong);
+nextBtn.addEventListener("click", nextSong);
+prevBtn.addEventListener("click", prevSong);
