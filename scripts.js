@@ -31,13 +31,21 @@ let covers = [
 	'./assets/covers/echo.png',
 ];
 
-let song = playlist[0];
-let performer = performers[0];
-let songName = names[0];
-let cover = covers[0];
+let bgColors = [
+	'FFFFFF',
+	'#000000',
+	'FFFFFF',
+];
 
 let numSong = 0;
+/*
+let song = playlist[numSong];
+let performer = performers[numSong];
+let songName = names[numSong];
+let cover = covers[numSong];
 
+let colorBg = bgColors[numSong];
+*/
 function playMusic() {
 
 	if (isPlay === false) {
@@ -59,11 +67,13 @@ function nextSong() {
 	document.querySelector(".bg-image").style.backgroundImage = "url('" + covers[numSong] + "')";
 	document.querySelector(".cover").src = covers[numSong];
 
+	document.querySelector("body").style.backgroundColor = bgColors[numSong];
+
 	if (isPlay === false) {
 		audio.src = playlist[numSong];
-		audio.play();
 		isPlay = true;
 		playBtn.classList.add("pause");
+		audio.play();
 	} else {
 		audio.pause();
 		audio.src = playlist[numSong];
@@ -79,6 +89,8 @@ function prevSong() {
 
 	document.querySelector(".bg-image").style.backgroundImage = "url('" + covers[numSong] + "')";
 	document.querySelector(".cover").src = covers[numSong];
+
+	document.querySelector("body").style.backgroundColor = bgColors[numSong];
 
 	if (isPlay === false) {
 		audio.src = playlist[numSong];
