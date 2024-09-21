@@ -59,6 +59,11 @@ a:hover { color: #b4e0fb; }
 	gap: 5px;
 }
 
+.cover-div {
+	display: flex;
+	align-items: center;
+}
+
 .cover {
 	height: 50vh;
 	object-fit: cover;
