@@ -1,9 +1,9 @@
 
-const audio = document.querySelector("audio");
-const playBtn = document.querySelector("play-btn");
+const audio = document.querySelector(".audio");
+const playBtn = document.querySelector(".play-btn");
 
-const nextBtn = document.querySelector("next");
-const prevBtn = document.querySelector("prev");
+const nextBtn = document.querySelector(".next");
+const prevBtn = document.querySelector(".prev");
 
 let isPlay = false;
 
@@ -43,11 +43,11 @@ function playMusic() {
 	if (isPlay === false) {
 		audio.play();
 		isPlay = true;
-		playBtn.classList.add('pause');
+		playBtn.classList.add("pause");
 	} else {
 		audio.pause();
 		isPlay = false;
-		playBtn.classList.remove('pause');
+		playBtn.classList.remove("pause");
 	}
 }
 
@@ -57,13 +57,13 @@ function nextSong() {
 	} else { numSong = 0; }
 
 	document.querySelector("body::before").style.backgroundImage = "url('" + covers[numSong] + "')";
-	document.querySelector("cover").src = covers[numSong];
+	document.querySelector(".cover").src = covers[numSong];
 
 	if (isPlay === false) {
 		audio.src = playlist[numSong];
 		audio.play();
 		isPlay = true;
-		playBtn.classList.add('pause');
+		playBtn.classList.add("pause");
 	} else {
 		audio.pause();
 		audio.src = playlist[numSong];
@@ -78,13 +78,13 @@ function prevSong() {
 	} else { numSong = playlist.length - 1; }
 
 	document.querySelector("body::before").style.backgroundImage = "url('" + covers[numSong] + "')";
-	document.querySelector("cover").src = covers[numSong];
+	document.querySelector(".cover").src = covers[numSong];
 
 	if (isPlay === false) {
 		audio.src = playlist[numSong];
 		audio.play();
 		isPlay = true;
-		playBtn.classList.add('pause');
+		playBtn.classList.add("pause");
 	} else {
 		audio.pause();
 		audio.src = playlist[numSong];
