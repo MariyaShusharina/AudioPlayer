@@ -94,6 +94,20 @@ a:hover { color: #b4e0fb; }
 	background-image: url("./assets/buttons/pause.png"), linear-gradient(to bottom, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.4));
 }
 
+.play-btn::before {
+	content: " ";
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 4em;
+	width: 4em;
+	background-image: url("./assets/blik.png");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: contain;
+	opacity:  0.3;
+	z-index: 10;
+}
 
 /*  Other buttons styles  */
 
