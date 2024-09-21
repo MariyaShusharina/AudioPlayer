@@ -1,5 +1,5 @@
-// General styles
 
+/*  General styles  */
 
 @font-face {
 	font-family: century gothic;
@@ -42,7 +42,7 @@ p, a {
 a:hover { color: #b4e0fb; }
 
 
-// Index misc styles
+/* Index misc styles */
 
 
 .main {
@@ -72,7 +72,7 @@ a:hover { color: #b4e0fb; }
 .song-length-div {}
 
 
-// Play button styles
+/*  Play button styles  */
 
 
 .play-btn {
@@ -85,7 +85,7 @@ a:hover { color: #b4e0fb; }
 }
 
 
-// Other buttons styles
+/*  Other buttons styles  */
 
 
 .prev {
@@ -99,7 +99,7 @@ a:hover { color: #b4e0fb; }
 }
 
 
-// Footer styles
+/*  Footer styles  */
 
 
 .footer {
@@ -120,7 +120,7 @@ a:hover { color: #b4e0fb; }
 .footer-logo:hover { opacity: 0.775; }
 
 
-// Media querries
+/*  Media querries  */
 
 
 @media screen and (max-width: 1024px) { }
