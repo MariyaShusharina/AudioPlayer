@@ -88,6 +88,8 @@ a:hover { color: #b4e0fb; }
 	height: 4em;
 	background-image: url("./assets/buttons/play.png");
 	background-size: contain;
+	border-radius: 50%;
+	background-color: transparent;
 }
 
 .pause {
@@ -103,6 +105,8 @@ a:hover { color: #b4e0fb; }
 	height: 2em;
 	background-image: url("./assets/buttons/prev.png");
 	background-size: contain;
+	border-radius: 50%;
+	background-color: transparent;
 }
 
 .next {
@@ -110,6 +114,8 @@ a:hover { color: #b4e0fb; }
 	height: 2em;
 	background-image: url("./assets/buttons/next.png");
 	background-size: contain;
+	border-radius: 50%;
+	background-color: transparent;
 }
 
 

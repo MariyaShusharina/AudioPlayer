@@ -5,9 +5,6 @@ const playBtn = document.querySelector("play-btn");
 const nextBtn = document.querySelector("next");
 const prevBtn = document.querySelector("prev");
 
-//let bgPic = document.body.style.src = "./assets/covers/cover_1.png";
-//let cover = document.querySelector("cover");
-
 let isPlay = false;
 
 let playlist = [
@@ -96,8 +93,10 @@ function prevSong() {
 	}
 }
 
-
-playBtn.addEventListener("click", playMusic);
-
-nextBtn.addEventListener("click", nextSong);
-prevBtn.addEventListener("click", prevSong);
+window.onload = function() {
+	
+	playBtn.addEventListener("click", playMusic);
+	
+	nextBtn.addEventListener("click", nextSong);
+	prevBtn.addEventListener("click", prevSong);
+}
