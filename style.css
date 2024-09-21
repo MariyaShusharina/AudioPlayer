@@ -85,14 +85,13 @@ a:hover { color: #b4e0fb; }
 .play-btn {
 	width: 4em;
 	height: 4em;
-	background-image: url("./assets/buttons/play.png");
+	background: url("./assets/buttons/play.png"), linear-gradient(to bottom, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.4));
 	background-size: contain;
 	border-radius: 50%;
-	background-color: transparent;
 }
 
 .pause {
-	background-image: url("./assets/buttons/pause.png");
+	background: url("./assets/buttons/pause.png"), linear-gradient(to bottom, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.4));
 }
 
 
@@ -102,19 +101,17 @@ a:hover { color: #b4e0fb; }
 .prev {
 	width: 2em;
 	height: 2em;
-	background-image: url("./assets/buttons/prev.png");
+	background: url("./assets/buttons/prev.png"), linear-gradient(to bottom, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.4));
 	background-size: contain;
 	border-radius: 50%;
-	background-color: transparent;
 }
 
 .next {
 	width: 2em;
 	height: 2em;
-	background-image: url("./assets/buttons/next.png");
+	background: url("./assets/buttons/next.png"), linear-gradient(to bottom, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.4));
 	background-size: contain;
 	border-radius: 50%;
-	background-color: transparent;
 }
 
 
