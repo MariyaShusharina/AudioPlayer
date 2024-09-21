@@ -1,9 +1,12 @@
 
-let audio = document.querySelector("audio");
-const playBtn = document.querySelector("play-btn");
+window.onload = function() {
 
-const nextBtn = document.querySelector("next");
-const prevBtn = document.querySelector("prev");
+	let audio = document.querySelector("audio");
+	const playBtn = document.querySelector("play-btn");
+
+	const nextBtn = document.querySelector("next");
+	const prevBtn = document.querySelector("prev");
+}
 
 let isPlay = false;
 
@@ -94,9 +97,9 @@ function prevSong() {
 }
 
 window.onload = function() {
-	
+
 	playBtn.addEventListener("click", playMusic);
-	
+
 	nextBtn.addEventListener("click", nextSong);
 	prevBtn.addEventListener("click", prevSong);
 }
