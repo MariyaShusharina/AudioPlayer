@@ -46,7 +46,8 @@ function playMusic() {
 	}
 }
 
-function nextSong {
+function nextSong() {
+
 	document.querySelector("body::before").style.backgroundImage = "url('./assets/covers/cover_2.png')";
 	document.querySelector("cover").src = "./assets/covers/cover_2.png";
 
@@ -62,7 +63,7 @@ function nextSong {
 	}
 }
 
-function prevSong {}
+function prevSong() {}
 
 
 playBtn.addEventListener('click', playMusic);
