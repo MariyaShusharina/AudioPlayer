@@ -77,11 +77,11 @@ a:hover { color: #b4e0fb; }
 
 .play-btn {
 	object-fit: contain;
-	content: url(./assets/buttons/play.png);
+	content: url("./assets/buttons/play.png");
 }
 
 .pause {
-	content: url(./assets/buttons/pause.png);
+	content: url("./assets/buttons/pause.png");
 }
 
 
@@ -90,12 +90,12 @@ a:hover { color: #b4e0fb; }
 
 .prev {
 	object-fit: contain;
-	content: url(./assets/buttons/prev.png);
+	content: url("./assets/buttons/prev.png");
 }
 
 .next {
 	object-fit: contain;
-	content: url(./assets/buttons/next.png);
+	content: url("./assets/buttons/next.png");
 }
 
 
