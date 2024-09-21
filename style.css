@@ -85,6 +85,7 @@ a:hover { color: #b4e0fb; }
 .play-btn {
 	width: 4em;
 	height: 4em;
+	position: relative;
 	background: url("./assets/buttons/play.png"), linear-gradient(to bottom, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.4));
 	background-size: contain;
 	border-radius: 50%;
@@ -96,16 +97,16 @@ a:hover { color: #b4e0fb; }
 
 .play-btn::before {
 	content: " ";
-	position: relative;
+	position: absolute;
 	top: 0;
-	left: 0;
+	left: -0.1em;
 	height: 4em;
 	width: 4em;
 	background-image: url("./assets/blik.png");
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: contain;
-	opacity:  0.3;
+	opacity:  0.4;
 	z-index: 10;
 }
 
