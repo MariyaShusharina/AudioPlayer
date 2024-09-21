@@ -1,5 +1,5 @@
 
-const audio = document.querySelector(".audio");
+const audio = document.querySelector("audio");
 const playBtn = document.querySelector(".play-btn");
 
 const nextBtn = document.querySelector(".next");
