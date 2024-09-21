@@ -32,9 +32,9 @@ let covers = [
 ];
 
 let bgColors = [
-	'FFFFFF',
+	'#FFFFFF',
 	'#000000',
-	'FFFFFF',
+	'#FFFFFF',
 ];
 
 let numSong = 0;
