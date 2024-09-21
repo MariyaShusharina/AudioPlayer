@@ -11,9 +11,9 @@ const prevBtn = document.querySelector("prev");
 let isPlay = false;
 
 let playlist = [
-	'Unheilig_-_Schenk_mir_ein_Wunder.mp3',
-	'Unheilig_-_Das_meer.mp3',
-	'Unheilig_-_Echo.mp3',
+	'./assets/songs/Unheilig_-_Schenk_mir_ein_Wunder.mp3',
+	'./assets/songs/Unheilig_-_Das_meer.mp3',
+	'./assets/songs/Unheilig_-_Echo.mp3',
 ];
 
 let performers = [
@@ -28,14 +28,22 @@ let names = [
 	'Echo',
 ];
 
+let covers = [
+	'./assets/covers/wunder.png',
+	'./assets/covers/das_meer.png',
+	'./assets/covers/echo.png',
+];
+
 let song = playlist[0];
 let performer = performers[0];
 let songName = names[0];
+let cover = covers[0];
 
+let numSong = 0;
 
 function playMusic() {
 
-	if (!isPlay) {
+	if (isPlay === false) {
 		audio.play();
 		isPlay = true;
 		playBtn.classList.add('pause');
@@ -48,22 +56,45 @@ function playMusic() {
 
 function nextSong() {
 
-	document.querySelector("body::before").style.backgroundImage = "url('./assets/covers/cover_2.png')";
-	document.querySelector("cover").src = "./assets/covers/cover_2.png";
+	if (numSong < playlist.length - 1) { numSong = numSong + 1;
+	} else { numSong = 0; }
 
-	if (!isPlay) {
-		//replace with next audio
+	document.querySelector("body::before").style.backgroundImage = "url('" + covers[numSong] + "')";
+	document.querySelector("cover").src = covers[numSong];
+
+	if (isPlay === false) {
+		audio.src = playlist[numSong];
 		audio.play();
 		isPlay = true;
 		playBtn.classList.add('pause');
 	} else {
 		audio.pause();
-		//replace with next audio
+		audio.src = playlist[numSong];
+		audio.currentTime = 0;
 		audio.play();
 	}
 }
 
-function prevSong() {}
+function prevSong() {
+
+	if (numSong > 0) { numSong = numSong - 1;
+	} else { numSong = playlist.length - 1; }
+
+	document.querySelector("body::before").style.backgroundImage = "url('" + covers[numSong] + "')";
+	document.querySelector("cover").src = covers[numSong];
+
+	if (isPlay === false) {
+		audio.src = playlist[numSong];
+		audio.play();
+		isPlay = true;
+		playBtn.classList.add('pause');
+	} else {
+		audio.pause();
+		audio.src = playlist[numSong];
+		audio.currentTime = 0;
+		audio.play();
+	}
+}
 
 
 playBtn.addEventListener('click', playMusic);
