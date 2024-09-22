@@ -69,6 +69,21 @@ a:hover { color: #b4e0fb; }
 	object-fit: cover;
 }
 
+.performer-div, .name-div {
+	display: flex;
+	justify-content: center;
+}
+
+.perf {}
+
+.song-name {
+	font-size: 0.9em;
+}
+
+
+/*  Lower Index misc styles  */
+
+
 .time {
 	display: flex;
 	justify-content: space-between;

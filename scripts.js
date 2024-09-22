@@ -5,6 +5,9 @@ const playBtn = document.querySelector(".play-btn");
 const nextBtn = document.querySelector(".next");
 const prevBtn = document.querySelector(".prev");
 
+const perf = document.querySelector(".perf");
+const songName = document.querySelector(".song-name");
+
 let isPlay = false;
 
 let playlist = [
@@ -69,6 +72,9 @@ function nextSong() {
 
 	document.querySelector("body").style.backgroundColor = bgColors[numSong];
 
+	perf.textContent = performers[numSong];
+	songName.textContent = names[numSong];
+
 	if (isPlay === false) {
 		audio.src = playlist[numSong];
 		isPlay = true;
@@ -91,6 +97,9 @@ function prevSong() {
 	document.querySelector(".cover").src = covers[numSong];
 
 	document.querySelector("body").style.backgroundColor = bgColors[numSong];
+
+	perf.textContent = performers[numSong];
+	songName.textContent = names[numSong];
 
 	if (isPlay === false) {
 		audio.src = playlist[numSong];
