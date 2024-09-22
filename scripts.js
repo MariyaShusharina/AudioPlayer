@@ -184,10 +184,12 @@ function songTimeChange(value) {
 function timeUpdate() {
 
 	songTime = Math.round(audio.currentTime);
-
 	timeConverter();
-
 	currTimeDiv.textContent = songTime;
+
+	songMaxTime = Math.round(audio.duration);
+	maxTimeConverter();
+	maxTimeDiv.textContent = songMaxTime;
 
 	progressBar.value = Math.round((songTime / songMaxTime) * 100);
 }

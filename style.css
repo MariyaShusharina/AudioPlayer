@@ -24,7 +24,6 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
-	overflow: visible;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -40,7 +39,6 @@ body {
 	width: 100vw;
 	height: 100vh;
 	object-fit: cover;
-	overflow: visible;
 	filter: blur(20px);
 	z-index: -1;
 }
