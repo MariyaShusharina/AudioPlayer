@@ -13,6 +13,7 @@ const maxTimeDiv = document.querySelector(".max-time");
 const progressBar = document.querySelector(".song-length");
 
 const scroll = document.querySelector("html").scrollHeight;
+console.log(scroll);
 
 function bgImageHeight() { document.querySelector(".bg-image").style.height = scroll; }
 bgImageHeight();
