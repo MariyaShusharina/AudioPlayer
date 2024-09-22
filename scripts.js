@@ -180,7 +180,11 @@ function timeUpdate() {
 	timeConverter();
 
 	currTimeDiv.textContent = songTime;
+
+	progressBar.value = Math.round((songTime / songMaxTime) * 100);
 }
+
+
 
 window.onload = function() {
 
