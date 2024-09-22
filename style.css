@@ -32,18 +32,27 @@ body {
 	z-index: -1;
 }
 
-p, a {
+p, h1, a {
 	font-family: century gothic;
 	color: #FFFFFF;
 	text-shadow: 0 0 0.2em black;
 	transition: color 0.4s;
 }
 
-a:hover { color: #b4e0fb; }
+a:hover { color: #DDDDDD; }
 
 
 /* Index misc styles */
 
+
+.header {
+	margin: 0;
+	padding: 1em;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 .main {
 	margin: 0;
@@ -227,7 +236,7 @@ input[type="range"]::-webkit-slider-thumb {
 	transition: opacity 0.4s;
 }
 
-.footer-logo:hover { opacity: 0.775; }
+.footer-logo:hover { opacity: 0.6; }
 
 
 /*  Media querries  */
