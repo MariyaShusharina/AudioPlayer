@@ -109,6 +109,7 @@ function nextSong() {
 		audio.src = playlist[numSong];
 		isPlay = true;
 		playBtn.classList.add("pause");
+		audio.currentTime = 0;
 		audio.play();
 	} else {
 		audio.pause();
@@ -142,9 +143,10 @@ function prevSong() {
 
 	if (isPlay === false) {
 		audio.src = playlist[numSong];
-		audio.play();
 		isPlay = true;
 		playBtn.classList.add("pause");
+		audio.currentTime = 0;
+		audio.play();
 	} else {
 		audio.pause();
 		audio.src = playlist[numSong];
@@ -163,6 +165,8 @@ function prevSong() {
 }
 
 function songTimeChange(value) {
+
+	songMaxTime = Math.round(audio.duration);
 
 	audio.currentTime = Math.round((songMaxTime / 100) * value);
 
