@@ -14,30 +14,35 @@ let playlist = [
 	'./assets/songs/Unheilig_-_Schenk_mir_ein_Wunder.mp3',
 	'./assets/songs/Unheilig_-_Das_meer.mp3',
 	'./assets/songs/Unheilig_-_Echo.mp3',
+	'./assets/songs/dipus_-_Letter_to_Twilight_Sparkle.mp3',
 ];
 
 let performers = [
 	'Unheilig',
 	'Unheilig',
 	'Unheilig',
+	'dipus',
 ];
 
 let names = [
 	'Schenk mir ein Wunder',
 	'Das meer',
 	'Echo',
+	'Letter to Twilight Sparkle.mp3',
 ];
 
 let covers = [
 	'./assets/covers/wunder.png',
 	'./assets/covers/das_meer.png',
 	'./assets/covers/echo.png',
+	'./assets/covers/letter.png',
 ];
 
 let bgColors = [
 	'#FFFFFF',
 	'#000000',
 	'#FFFFFF',
+	'#000000',
 ];
 
 let numSong = 0;
