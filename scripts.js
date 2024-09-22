@@ -195,7 +195,6 @@ function timeUpdate() {
 }
 
 
-/*
 window.onload = function() {
 
 	songMaxTime = Math.round(audio.duration);
@@ -204,16 +203,5 @@ window.onload = function() {
 
 	maxTimeDiv.textContent = songMaxTime;
 }
-*/
 
-/*
 
-window.onload = function() {
-
-	playBtn.addEventListener("click", playMusic);
-
-	nextBtn.addEventListener("click", nextSong);
-	prevBtn.addEventListener("click", prevSong);
-}
-
-*/
