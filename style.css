@@ -130,17 +130,18 @@ a:hover { color: #DDDDDD; }
 	appearance: none;
 	width: 95%;
 	height: 0.4em;
-	background: linear-gradient(to bottom, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.4));
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.4));
 	border-radius: 0.4em;
 	cursor: pointer;
 }
 
 input[type="range"]::-webkit-slider-thumb {
 	appearance: none;
-	width: 0.7em;
-	height: 0.7em;
-	background: linear-gradient(to bottom, rgba(256, 256, 256, 0.6), rgba(256, 256, 256, 0.8));
-	border-radius: 50%;
+	width: 0.5em;
+	height: 0.9em;
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1));
+	filter: drop-shadow(0 0 0.12em rgba(0, 0, 0, 0.6));
+	border-radius: 0.5em;
 	cursor: pointer;
 }
 
@@ -160,13 +161,13 @@ input[type="range"]::-webkit-slider-thumb {
 	width: 4em;
 	height: 4em;
 	position: relative;
-	background: url("./assets/buttons/play.png"), linear-gradient(to bottom, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.4));
+	background: url("./assets/buttons/play.png"), linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.4));
 	background-size: contain;
 	border-radius: 50%;
 }
 
 .pause {
-	background-image: url("./assets/buttons/pause.png"), linear-gradient(to bottom, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.4));
+	background-image: url("./assets/buttons/pause.png"), linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.4));
 }
 
 .play-btn::before {
@@ -191,7 +192,7 @@ input[type="range"]::-webkit-slider-thumb {
 	width: 2em;
 	height: 2em;
 	position: relative;
-	background: url("./assets/buttons/prev.png"), linear-gradient(to bottom, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.4));
+	background: url("./assets/buttons/prev.png"), linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.4));
 	background-size: contain;
 	border-radius: 50%;
 }
@@ -200,7 +201,7 @@ input[type="range"]::-webkit-slider-thumb {
 	width: 2em;
 	height: 2em;
 	position: relative;
-	background: url("./assets/buttons/next.png"), linear-gradient(to bottom, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.4));
+	background: url("./assets/buttons/next.png"), linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.4));
 	background-size: contain;
 	border-radius: 50%;
 }
