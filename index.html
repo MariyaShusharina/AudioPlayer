@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Audio Player</title>
+    
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport">
+    
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="./assets/favicon.ico">
+	</head>
+	<body>
+
+		<div class="bg-image-div"><img src="./assets/covers/wunder.png" class="bg-image" alt="Background">&nbsp;</div>
+
+		<header class="header">
+			<h1>Audio Player</h1>
+		</header>
+		
+		<main class="main">
+			<div class="wrap">
+				<div class="cover-div"><img class="cover" src="./assets/covers/wunder.png" alt="Cover"></div>
+
+				<div class="performer-div">
+					<p class="perf">Unheilig</p>
+				</div>
+
+				<div class="name-div">
+					<p class="song-name">Schenk mir ein Wunder</p>
+				</div>
+
+				<div class="time">
+					<div><p class="current-time"></p></div>
+					<div><p class="max-time"></p></div>
+				</div>
+
+				<div class="song-length-div">
+					<input type="range" class="song-length" min="0" max="100" value="0" onchange="songTimeChange(this.value)">
+				</div>
+
+				<div class="audio-div">
+					<audio src="./assets/songs/Unheilig_-_Schenk_mir_ein_Wunder.mp3" ontimeupdate="timeUpdate()" onended="nextSong()"></audio>
+				</div>
+
+				<div class="controls-div">
+					<button onclick="prevSong()" class="prev"></button>
+					<button onclick="playMusic()" class="play-btn"></button>
+					<button onclick="nextSong()" class="next"></button>
+				</div>
+			</div>
+		</main>
+		
+		<footer class="footer">
+			<div><p class="footer-text">2024 <a class="footer-link" href="https://github.com/MariyaShusharina" target="_blank">MariyaShusharina</a></p></div>
+			<div><a class="footer-link" href="https://rs.school/courses/javascript-ru" target="_blank"><img src="./assets/rss_logo.svg" class="footer-logo" alt="RS School"></a></div>
+		</footer>
+
+		<script src="./scripts.js"></script>
+	</body>
+</html>
