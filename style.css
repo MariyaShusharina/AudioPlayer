@@ -121,6 +121,7 @@ a:hover { color: #b4e0fb; }
 .prev {
 	width: 2em;
 	height: 2em;
+	position: relative;
 	background: url("./assets/buttons/prev.png"), linear-gradient(to bottom, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.4));
 	background-size: contain;
 	border-radius: 50%;
@@ -129,6 +130,7 @@ a:hover { color: #b4e0fb; }
 .next {
 	width: 2em;
 	height: 2em;
+	position: relative;
 	background: url("./assets/buttons/next.png"), linear-gradient(to bottom, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.4));
 	background-size: contain;
 	border-radius: 50%;
