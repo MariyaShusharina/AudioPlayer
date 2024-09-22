@@ -66,7 +66,7 @@ a:hover { color: #DDDDDD; }
 .wrap {
 	display: flex;
 	flex-direction: column;
-	gap: 5px;
+	gap: 0.3em;
 }
 
 .cover-div {
@@ -101,6 +101,7 @@ a:hover { color: #DDDDDD; }
 	width: 95%;
 	display: flex;
 	justify-content: space-between;
+	align-self: center;
 }
 
 .song-length-div {
@@ -127,6 +128,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .controls-div {
+	margin-top: 0.7em;
 	display: flex;
 	justify-content: center;
 	align-items: center;

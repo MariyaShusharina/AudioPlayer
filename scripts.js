@@ -164,9 +164,9 @@ function prevSong() {
 
 function songTimeChange(value) {
 
-	audio.currentTime = (songMaxTime / 100) * value;
+	audio.currentTime = Math.round((songMaxTime / 100) * value);
 
-	songTime = Math.round(audio.currentTime);
+	songTime = audio.currentTime;
 
 	timeConverter();
 
