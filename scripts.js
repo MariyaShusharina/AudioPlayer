@@ -8,7 +8,18 @@ const prevBtn = document.querySelector(".prev");
 const perf = document.querySelector(".perf");
 const songName = document.querySelector(".song-name");
 
+const currTimeDiv = document.querySelector(".current-time");
+const maxTimeDiv = document.querySelector(".max-time");
 const progressBar = document.querySelector(".song-length");
+
+let songTime = Math.round(audio.currentTime);
+let songMaxTime = Math.round(audio.duration);
+
+// Put HERE calculations for minutes-60 from Math-round values
+
+// Initial text for time divs
+currTimeDiv.textContent = songTime;
+songMaxTime.textContent = songMaxTime;
 
 let isPlay = false;
 
@@ -120,6 +131,12 @@ function prevSong() {
 		audio.play();
 	}
 }
+
+function songTimeChange() {
+
+	
+}
+
 
 /*
 

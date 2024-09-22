@@ -62,7 +62,7 @@ a:hover { color: #b4e0fb; }
 
 .cover-div {
 	display: flex;
-	align-items: center;
+	justify-content: center;
 }
 
 .cover {
@@ -93,13 +93,25 @@ a:hover { color: #b4e0fb; }
 	justify-content: space-between;
 }
 
-.song-length-div {}
+.song-length-div {
+	display: flex;
+	justify-content: center;
+}
 
 .song-length {
 	appearance: none;
 	width: 95%;
-	height: 0.2em;
+	height: 0.4em;
 	background: linear-gradient(to bottom, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.4));
+	border-radius: 0.4em;
+	cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	appearance: none;
+	width: 0.6em;
+	height: 0.6em;
+	background: linear-gradient(to bottom, rgba(256, 256, 256, 0.6), rgba(256, 256, 256, 0.8));
 	border-radius: 50%;
 	cursor: pointer;
 }
