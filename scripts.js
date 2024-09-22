@@ -27,14 +27,14 @@ function timeConverter() {
 
 	songTimeMinut = Math.floor(songTime / 60);
 	songTimeSecond = songTime % 60;
-	if (songTimeSecond < 10) { songTimeSecond = ' ' + '0' + songTimeSecond; }
+	if (songTimeSecond < 10) { songTimeSecond = '0' + `${songTimeSecond}`; }
 }
 
 function maxTimeConverter() {
 
 	songMaxTimeMinut = Math.floor(songMaxTime / 60);
 	songMaxTimeSecond = songMaxTime % 60;
-	if (songMaxTimeSecond < 10) { songMaxTimeSecond = ' ' + '0' + songMaxTimeSecond; }
+	if (songMaxTimeSecond < 10) { songMaxTimeSecond = '0' + `${songMaxTimeSecond}`; }
 }
 
 // Initial text for time divs
