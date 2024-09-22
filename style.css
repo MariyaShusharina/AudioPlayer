@@ -164,6 +164,11 @@ input[type="range"]::-webkit-slider-thumb {
 	background: url("./assets/buttons/play.png"), linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.4));
 	background-size: contain;
 	border-radius: 50%;
+	transition: 0.4s;
+}
+
+.play-btn:hover {
+    transform: scale(1.12);
 }
 
 .pause {
@@ -195,6 +200,7 @@ input[type="range"]::-webkit-slider-thumb {
 	background: url("./assets/buttons/prev.png"), linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.4));
 	background-size: contain;
 	border-radius: 50%;
+	transition: 0.4s;
 }
 
 .next {
@@ -204,6 +210,15 @@ input[type="range"]::-webkit-slider-thumb {
 	background: url("./assets/buttons/next.png"), linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.4));
 	background-size: contain;
 	border-radius: 50%;
+	transition: 0.4s;
+}
+
+.prev:hover {
+    transform: scale(1.2);
+}
+
+.next:hover {
+    transform: scale(1.2);
 }
 
 .prev::before {
