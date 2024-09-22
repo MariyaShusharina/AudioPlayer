@@ -8,6 +8,8 @@
 
 body {
 	min-height: 100vh;
+	min-width: 100vw;
+	position: absolute;
 	margin: 0;
 	padding: 0;
 	
@@ -87,6 +89,7 @@ a:hover { color: #DDDDDD; }
 
 .cover {
 	height: 50vh;
+	width: 50vh;
 	object-fit: cover;
 }
 
