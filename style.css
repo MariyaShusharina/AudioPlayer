@@ -48,10 +48,10 @@ p, h1, a {
 	font-family: century gothic;
 	color: #FFFFFF;
 	text-shadow: 0 0 0.2em black;
-	transition: color 0.4s;
+	transition: 0.4s;
 }
 
-a:hover { color: #DDDDDD; }
+a:hover { opacity: 0.7; }
 
 
 /* Index misc styles */
