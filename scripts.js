@@ -15,11 +15,21 @@ const progressBar = document.querySelector(".song-length");
 let songTime = Math.round(audio.currentTime);
 let songMaxTime = Math.round(audio.duration);
 
-// Put HERE calculations for minutes-60 from Math-round values
+function timeConverter() {
+
+	//songTime;
+	// Put HERE calculations for minutes-60 from Math-round values
+}
+
+function maxTimeConverter() {
+
+	//songMaxTime;
+	// Put HERE calculations for minutes-60 from Math-round values
+}
 
 // Initial text for time divs
 currTimeDiv.textContent = songTime;
-songMaxTime.textContent = songMaxTime;
+maxTimeDiv.textContent = songMaxTime;
 
 let isPlay = false;
 
@@ -104,6 +114,15 @@ function nextSong() {
 		audio.currentTime = 0;
 		audio.play();
 	}
+
+	songTime = Math.round(audio.currentTime);
+	songMaxTime = Math.round(audio.duration);
+
+	timeConverter();
+	maxTimeConverter();
+
+	currTimeDiv.textContent = songTime;
+	maxTimeDiv.textContent = songMaxTime;
 }
 
 function prevSong() {
@@ -130,11 +149,26 @@ function prevSong() {
 		audio.currentTime = 0;
 		audio.play();
 	}
+
+	songTime = Math.round(audio.currentTime);
+	songMaxTime = Math.round(audio.duration);
+
+	timeConverter();
+	maxTimeConverter();
+
+	currTimeDiv.textContent = songTime;
+	maxTimeDiv.textContent = songMaxTime;
 }
 
 function songTimeChange() {
 
-	
+	audio.currentTime = (songMaxTime / 100) * progressBar.value;
+
+	songTime = Math.round(audio.currentTime);
+
+	timeConverter();
+
+	currTimeDiv.textContent = songTime;
 }
 
 
