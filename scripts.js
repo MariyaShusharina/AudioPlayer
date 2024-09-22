@@ -202,6 +202,8 @@ window.onload = function() {
 	maxTimeConverter();
 
 	maxTimeDiv.textContent = songMaxTime;
+
+	progressBar.value = Math.round((songTime / songMaxTime) * 100);
 }
 
 
