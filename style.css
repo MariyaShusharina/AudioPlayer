@@ -35,6 +35,7 @@ body {
 p, a {
 	font-family: century gothic;
 	color: #FFFFFF;
+	text-shadow: 0 0 0.2em black;
 	transition: color 0.4s;
 }
 
@@ -74,10 +75,13 @@ a:hover { color: #b4e0fb; }
 	justify-content: center;
 }
 
-.perf {}
+.perf {
+	margin: 0.5em 0;
+}
 
 .song-name {
-	font-size: 0.9em;
+	font-size: 0.8em;
+	margin: 0.5em 0;
 }
 
 
@@ -196,6 +200,7 @@ a:hover { color: #b4e0fb; }
 
 .footer-logo {
 	max-width: 12em;
+	filter: drop-shadow(0 0 0.25em rgba(0, 0, 0, 0.5));
 	opacity: 1;
 	transition: opacity 0.4s;
 }
