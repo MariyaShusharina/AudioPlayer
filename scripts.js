@@ -15,23 +15,31 @@ const progressBar = document.querySelector(".song-length");
 let songTime = Math.round(audio.currentTime);
 let songMaxTime = Math.round(audio.duration);
 
+let songTimeMinut = 0;
+let songTimeSecond = 0;
+
+let songMaxTimeMinut = 0;
+let songMaxTimeSecond = 0;
+
 progressBar.value = Math.round((songTime / songMaxTime) * 100);
 
 function timeConverter() {
 
-	//songTime;
-	// Put HERE calculations for minutes-60 from Math-round values
+	songTimeMinut = Math.floor(songTime / 60);
+	songTimeSecond = songTime % 60;
+	if (songTimeSecond.lenght < 2) { songTimeSecond = '0' + songTimeSecond; }
 }
 
 function maxTimeConverter() {
 
-	//songMaxTime;
-	// Put HERE calculations for minutes-60 from Math-round values
+	songMaxTimeMinut = Math.floor(songMaxTime / 60);
+	songMaxTimeSecond = songMaxTime % 60;
+	if (songMaxTimeSecond.lenght < 2) { songMaxTimeSecond = '0' + songMaxTimeSecond; }
 }
 
 // Initial text for time divs
-currTimeDiv.textContent = songTime;
-maxTimeDiv.textContent = songMaxTime;
+currTimeDiv.textContent = songTimeMinut + ':' + songTimeSecond;
+maxTimeDiv.textContent = songMaxTimeMinut + ':' + songMaxTimeSecond;
 
 let isPlay = false;
 
@@ -70,15 +78,10 @@ let bgColors = [
 	'#000000',
 ];
 
-let numSong = 0;
-/*
-let song = playlist[numSong];
-let performer = performers[numSong];
-let songName = names[numSong];
-let cover = covers[numSong];
 
-let colorBg = bgColors[numSong];
-*/
+let numSong = 0;
+
+
 function playMusic() {
 
 	if (isPlay === false) {
@@ -126,8 +129,8 @@ function nextSong() {
 	timeConverter();
 	maxTimeConverter();
 
-	currTimeDiv.textContent = songTime;
-	maxTimeDiv.textContent = songMaxTime;
+	currTimeDiv.textContent = songTimeMinut + ':' + songTimeSecond;
+	maxTimeDiv.textContent = songMaxTimeMinut + ':' + songMaxTimeSecond;
 }
 
 function prevSong() {
@@ -164,8 +167,8 @@ function prevSong() {
 	timeConverter();
 	maxTimeConverter();
 
-	currTimeDiv.textContent = songTime;
-	maxTimeDiv.textContent = songMaxTime;
+	currTimeDiv.textContent = songTimeMinut + ':' + songTimeSecond;
+	maxTimeDiv.textContent = songMaxTimeMinut + ':' + songMaxTimeSecond;
 }
 
 function songTimeChange(value) {
@@ -178,18 +181,18 @@ function songTimeChange(value) {
 
 	timeConverter();
 
-	currTimeDiv.textContent = songTime;
+	currTimeDiv.textContent = songTimeMinut + ':' + songTimeSecond;
 }
 
 function timeUpdate() {
 
 	songTime = Math.round(audio.currentTime);
 	timeConverter();
-	currTimeDiv.textContent = songTime;
+	currTimeDiv.textContent = songTimeMinut + ':' + songTimeSecond;
 
 	songMaxTime = Math.round(audio.duration);
 	maxTimeConverter();
-	maxTimeDiv.textContent = songMaxTime;
+	maxTimeDiv.textContent = songMaxTimeMinut + ':' + songMaxTimeSecond;
 
 	progressBar.value = Math.round((songTime / songMaxTime) * 100);
 }
@@ -201,7 +204,7 @@ window.onload = function() {
 
 	maxTimeConverter();
 
-	maxTimeDiv.textContent = songMaxTime;
+	maxTimeDiv.textContent = songMaxTimeMinut + ':' + songMaxTimeSecond;
 
 	progressBar.value = Math.round((songTime / songMaxTime) * 100);
 }
