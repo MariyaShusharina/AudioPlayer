@@ -105,6 +105,8 @@ function nextSong() {
 	perf.textContent = performers[numSong];
 	songName.textContent = names[numSong];
 
+	progressBar.value = 0;
+
 	if (isPlay === false) {
 		audio.src = playlist[numSong];
 		isPlay = true;
@@ -126,8 +128,6 @@ function nextSong() {
 
 	currTimeDiv.textContent = songTime;
 	maxTimeDiv.textContent = songMaxTime;
-
-	progressBar.value = 0;
 }
 
 function prevSong() {
@@ -143,6 +143,8 @@ function prevSong() {
 	perf.textContent = performers[numSong];
 	songName.textContent = names[numSong];
 
+	progressBar.value = 0;
+
 	if (isPlay === false) {
 		audio.src = playlist[numSong];
 		isPlay = true;
@@ -164,8 +166,6 @@ function prevSong() {
 
 	currTimeDiv.textContent = songTime;
 	maxTimeDiv.textContent = songMaxTime;
-
-	progressBar.value = 0;
 }
 
 function songTimeChange(value) {
@@ -195,7 +195,7 @@ function timeUpdate() {
 }
 
 
-
+/*
 window.onload = function() {
 
 	songMaxTime = Math.round(audio.duration);
@@ -204,7 +204,7 @@ window.onload = function() {
 
 	maxTimeDiv.textContent = songMaxTime;
 }
-
+*/
 
 /*
 
