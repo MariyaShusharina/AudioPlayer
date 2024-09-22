@@ -12,6 +12,9 @@ const currTimeDiv = document.querySelector(".current-time");
 const maxTimeDiv = document.querySelector(".max-time");
 const progressBar = document.querySelector(".song-length");
 
+const scroll = document.querySelector("html").scrollHeight;
+function() { document.querySelector(".bg-image").style.height = scroll; }
+
 let songTime = Math.round(audio.currentTime);
 let songMaxTime = Math.round(audio.duration);
 
