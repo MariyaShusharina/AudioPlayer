@@ -126,6 +126,8 @@ function nextSong() {
 
 	currTimeDiv.textContent = songTime;
 	maxTimeDiv.textContent = songMaxTime;
+
+	progressBar.value = 0;
 }
 
 function prevSong() {
@@ -162,6 +164,8 @@ function prevSong() {
 
 	currTimeDiv.textContent = songTime;
 	maxTimeDiv.textContent = songMaxTime;
+
+	progressBar.value = 0;
 }
 
 function songTimeChange(value) {
