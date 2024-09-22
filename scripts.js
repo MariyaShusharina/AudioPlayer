@@ -160,9 +160,9 @@ function prevSong() {
 	maxTimeDiv.textContent = songMaxTime;
 }
 
-function songTimeChange() {
-
-	audio.currentTime = (songMaxTime / 100) * progressBar.value;
+function songTimeChange(value) {
+	
+	audio.currentTime = (songMaxTime / 100) * value;
 
 	songTime = Math.round(audio.currentTime);
 
