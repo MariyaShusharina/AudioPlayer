@@ -134,6 +134,36 @@ a:hover { color: #b4e0fb; }
 	border-radius: 50%;
 }
 
+.prev::before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: -0.1em;
+	height: 2em;
+	width: 2em;
+	background-image: url("./assets/blik.png");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: contain;
+	opacity:  0.4;
+	z-index: 10;
+}
+
+.next::before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: -0.1em;
+	height: 2em;
+	width: 2em;
+	background-image: url("./assets/blik.png");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: contain;
+	opacity:  0.4;
+	z-index: 10;
+}
+
 
 /*  Footer styles  */
 
