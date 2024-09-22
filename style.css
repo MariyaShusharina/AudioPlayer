@@ -95,6 +95,15 @@ a:hover { color: #b4e0fb; }
 
 .song-length-div {}
 
+.song-length {
+	appearance: none;
+	width: 95%;
+	height: 0.2em;
+	background: linear-gradient(to bottom, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.4));
+	border-radius: 50%;
+	cursor: pointer;
+}
+
 .controls-div {
 	display: flex;
 	justify-content: center;

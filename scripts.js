@@ -8,6 +8,8 @@ const prevBtn = document.querySelector(".prev");
 const perf = document.querySelector(".perf");
 const songName = document.querySelector(".song-name");
 
+const progressBar = document.querySelector(".song-length");
+
 let isPlay = false;
 
 let playlist = [
@@ -28,7 +30,7 @@ let names = [
 	'Schenk mir ein Wunder',
 	'Das meer',
 	'Echo',
-	'Letter to Twilight Sparkle.mp3',
+	'Letter to Twilight Sparkle',
 ];
 
 let covers = [
