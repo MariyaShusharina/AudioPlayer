@@ -89,6 +89,7 @@ a:hover { color: #b4e0fb; }
 
 
 .time {
+	width: 95%;
 	display: flex;
 	justify-content: space-between;
 }
