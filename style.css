@@ -82,7 +82,7 @@ a:hover { color: #DDDDDD; }
 	flex-direction: column;
 	gap: 0.3em;
 	padding: 1.7em;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
     border-radius: 1.5em;
 }
 

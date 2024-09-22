@@ -173,6 +173,24 @@ function songTimeChange(value) {
 	currTimeDiv.textContent = songTime;
 }
 
+function timeUpdate() {
+
+	songTime = Math.round(audio.currentTime);
+
+	timeConverter();
+
+	currTimeDiv.textContent = songTime;
+}
+
+window.onload = function() {
+
+	songMaxTime = Math.round(audio.duration);
+
+	maxTimeConverter();
+
+	maxTimeDiv.textContent = songMaxTime;
+}
+
 
 /*
 
