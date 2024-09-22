@@ -97,7 +97,7 @@ function nextSong() {
 	if (numSong < (playlist.length - 1)) { numSong = numSong + 1;
 	} else { numSong = 0; }
 
-	document.querySelector(".bg-image").style.backgroundImage = "url('" + covers[numSong] + "')";
+	document.querySelector(".bg-image").src = covers[numSong];
 	document.querySelector(".cover").src = covers[numSong];
 
 	document.querySelector("body").style.backgroundColor = bgColors[numSong];
@@ -132,7 +132,7 @@ function prevSong() {
 	if (numSong > 0) { numSong = numSong - 1;
 	} else { numSong = playlist.length - 1; }
 
-	document.querySelector(".bg-image").style.backgroundImage = "url('" + covers[numSong] + "')";
+	document.querySelector(".bg-image").src = covers[numSong];
 	document.querySelector(".cover").src = covers[numSong];
 
 	document.querySelector("body").style.backgroundColor = bgColors[numSong];
