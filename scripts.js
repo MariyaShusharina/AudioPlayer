@@ -15,6 +15,8 @@ const progressBar = document.querySelector(".song-length");
 let songTime = Math.round(audio.currentTime);
 let songMaxTime = Math.round(audio.duration);
 
+progressBar.value = Math.round((songTime / songMaxTime) * 100);
+
 function timeConverter() {
 
 	//songTime;
@@ -161,7 +163,7 @@ function prevSong() {
 }
 
 function songTimeChange(value) {
-	
+
 	audio.currentTime = (songMaxTime / 100) * value;
 
 	songTime = Math.round(audio.currentTime);

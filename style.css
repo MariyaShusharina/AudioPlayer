@@ -109,8 +109,8 @@ a:hover { color: #b4e0fb; }
 
 input[type="range"]::-webkit-slider-thumb {
 	appearance: none;
-	width: 0.6em;
-	height: 0.6em;
+	width: 0.7em;
+	height: 0.7em;
 	background: linear-gradient(to bottom, rgba(256, 256, 256, 0.6), rgba(256, 256, 256, 0.8));
 	border-radius: 50%;
 	cursor: pointer;
